@@ -37,7 +37,7 @@ const gameStateSchema = mongoose.Schema({
   },
   gold: {
     type: Number,
-    default: 100,
+    default: 0,
   },
   tokens: {
     type: Number,
@@ -58,7 +58,7 @@ const gameStateSchema = mongoose.Schema({
   },
   currentShaftCost: {
     type: Number,
-    default: 30,
+    default: 500,
   },
   elevator: elevatorSchema,
 }, {
