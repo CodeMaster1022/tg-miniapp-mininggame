@@ -13,9 +13,7 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 
 const corsOptions = {
-  origin: process.env.NODE_ENV === 'production' 
-    ? ['https://new-game-psi.vercel.app/', 'https://t.me'] // Add your production domains
-    : ['http://localhost:3000', 'http://localhost:5173', 'https://t.me'], // Development domains
+  origin:['https://new-game-psi.vercel.app/', 'https://t.me'], // Add your production domains
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
